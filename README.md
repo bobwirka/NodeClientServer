@@ -1,4 +1,4 @@
-# NodeClientServer
+# Node Client/Server
 
 Example Node.js project that illustrates client server exchanges using AJAX with JSON data.
 
