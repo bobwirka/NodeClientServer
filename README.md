@@ -20,6 +20,6 @@ application mode, the window will become smaller to fit the user interface. Ther
 tabs, bookmarks, etc.
 
 You can start chromium or Chrome from the command line to do this:
-
+```sh
 chromium-browser --new-window --app=http://192.168.1.80:8080/index.html
-
+```
