@@ -19,9 +19,11 @@ function handleGet(req: IncomingMessage , res: ServerResponse)
     var resultCode: number = 200;
     var content: string = 'text/html';
 
-    // Check for just '/'.
-    if (baseName == '/')
+    // Check for just '/' or 0-length string.
+    if ((baseName === '/') || (baseName.length === 0))
+    {
         baseName = 'index.html';
+    }
 
     // Restrict path.
     switch (path.extname(baseName))

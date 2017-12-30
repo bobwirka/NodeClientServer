@@ -14,9 +14,10 @@ function handleGet(req, res) {
     var baseName = path.basename(req.url);
     var resultCode = 200;
     var content = 'text/html';
-    // Check for just '/'.
-    if (baseName == '/')
+    // Check for just '/' or 0-length string.
+    if ((baseName === '/') || (baseName.length === 0)) {
         baseName = 'index.html';
+    }
     // Restrict path.
     switch (path.extname(baseName)) {
         case '.html':
@@ -156,4 +157,3 @@ http.createServer(function (req, res) {
 }).listen(httpPort);
 // Message.
 console.log('Server listening on port ' + String(httpPort));
-//# sourceMappingURL=app.js.map
