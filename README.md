@@ -22,6 +22,8 @@ you're using chromium.
 The package.json file was updated to use this script, so starting the application with 'npm start'
 will do the same thing as executing start.sh.
 
+You can compile the project with "Ctrl-Shift-B" while in Visual Studio Code.
+
 **BONUS FEATURE**
 
 Added window resize to 'client/index.ts' so that if the browser is started as a new window in

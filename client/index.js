@@ -25,14 +25,14 @@ function sendAjaxPost(postData, callback) {
  * View model.
  *
  ******************************************************************************/
-var CalcData = (function () {
+var CalcData = /** @class */ (function () {
     function CalcData() {
         this.fcn = 'calculate';
         this.arg = [1, 2, 3];
     }
     return CalcData;
 }());
-var ExampleViewModel = (function () {
+var ExampleViewModel = /** @class */ (function () {
     function ExampleViewModel() {
         this.value1 = ko.observable('1');
         this.value2 = ko.observable('2');

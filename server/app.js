@@ -1,7 +1,7 @@
 "use strict";
 /// <reference path="../types/jquery.d.ts" />
 /// <reference path="../types/node.d.ts" />
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var http = require('http');
 var path = require('path');
 var fs = require('fs');
@@ -157,3 +157,4 @@ http.createServer(function (req, res) {
 }).listen(httpPort);
 // Message.
 console.log('Server listening on port ' + String(httpPort));
+//# sourceMappingURL=app.js.map
