@@ -16,7 +16,7 @@ server via AJAX. The server adds the 3 values together and returns the sum, whic
 the web page.
 
 Have added 'start.sh' script that will start the server and open a google chrome window that will
-be resized when the application starts. Substitute chromium-browser for google-chrome-stabel if
+be resized when the application starts. Substitute chromium-browser for google-chrome-stable if
 you're using chromium.
 
 The package.json file was updated to use this script, so starting the application with 'npm start'
